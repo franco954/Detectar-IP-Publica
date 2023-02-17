@@ -4,31 +4,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
 :root{
-    --main-color: #e62117;
+    --main-color: #2059ae;
 }
 
 
-
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 body{
     font-family: 'Roboto', 'sans-serif';
-    background-image: url('./img/4907157.jpg');
-    background-size: contain
-    ;
+    background-color: rgb(255, 251, 246);
+    background-size: contain;
+    margin: 0;
+    padding: 0;
 }
 
 
 .encabezado{
-
-    font-size: .7em;
-    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    text-align: left;
+    list-style: none;
 }
+
+.encabezado > nav{
+    font-size: 1.3em;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.encabezado > nav > a{
+    color:#000000 ;
+    padding: 10px;
+    list-style: none;
+    display: inline;
+    background-color: rgb(255, 255, 255);
+
+}
+
+footer{
+    margin-top: 10%;
+    padding: 5px;
+}
+
 
 .info-section{
     display: grid;
     width: 60%;
     margin: 0 auto;
 
+}
+.info-section > h2{
+    text-align: center;
 }
 
 .container{

@@ -6,7 +6,7 @@
 $(window).on('load', function () {
     setTimeout(function () {
   $(".loader-page").css({visibility:"hidden",opacity:"0"})
-}, 1000);
+}, 200);
    
 });
 
@@ -24,7 +24,7 @@ const pintarPantalla  = (data) =>{
 obtenerIp()
 
 
-ScrollReveal().reveal('.container > h1', {delay: 1200});
+ScrollReveal().reveal('.container > h1', {delay: 500});
 
 
 
