@@ -18,7 +18,7 @@ const obtenerIp = () => {
 };
 
 const pintarPantalla  = (data) =>{
-    document.querySelector('.container > h1').innerHTML = `Tu Ip pública es:<br><span id="ip">${data.ip}</span>`
+    document.querySelector('.container > h1').innerHTML = `<span id="ip">${data.ip}</span>`
 }
 
 obtenerIp()
