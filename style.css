@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
 :root{
-    --main-color: #2059ae;
+    --main-color: #a21079;
 }
 
 
@@ -21,38 +21,22 @@ body{
 }
 
 
-.encabezado{
-    margin: 0 auto;
-    width: 60%;
-    text-align: left;
-    list-style: none;
-}
-
-.encabezado > nav{
-    font-size: 1.3em;
-    padding: 10px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.encabezado > nav > a{
-    color:#000000 ;
-    padding: 10px;
-    list-style: none;
-    display: inline;
-    background-color: rgb(255, 255, 255);
-
-}
-
 footer{
     margin-top: 10%;
     padding: 5px;
 }
 
+#navbar-page{
+    z-index: 10;
+    overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 .info-section{
     display: grid;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 
 }
@@ -66,7 +50,7 @@ footer{
     text-align: center;
     display: flex;
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
 }
@@ -83,9 +67,23 @@ footer{
     font-weight: bold;
 }
 
-footer{
-    text-align: center;
+#legend-ip{
+    font-size: 0.8em;
 }
+
+footer{
+    margin: 35px 0 0 0;
+    padding: 0%;
+}
+
+.container-footer {
+    background-color: #222;
+    color: #eee;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
 
 
 @media (max-width: 520px) {
@@ -106,46 +104,3 @@ footer{
     }
   }
 
-
-.loader-page {
-    position: fixed;
-    z-index: 25000;
-    left: 0px;
-    top: 0px;
-    height: 70%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition:all .3s ease;
-}
-.loader-page::before {
-    content: "";
-    position: absolute;
-    border: 2px solid var(--main-color);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border-left: 2px solid rgba(0, 0, 0, 0);
-    border-top: 2px solid rgba(50, 150, 176,0);
-    animation: rotarload 1s linear infinite;
-    transform: rotate(0deg);
-}
-@keyframes rotarload {
-      0%   {transform: rotate(0deg)}
-      100% {transform: rotate(360deg)}
-}
-.loader-page::after {
-    content: "";
-    position: absolute;
-    border: 2px solid var(--main-color);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border-left: 2px solid rgba(50, 150, 176, 0);
-    border-top: 2px solid rgba(50, 150, 176, 0);
-    animation: rotarload 1s ease-out infinite;
-    transform: rotate(0deg);
-}

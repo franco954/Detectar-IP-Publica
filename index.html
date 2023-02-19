@@ -7,30 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI IP pública</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="
+https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/pulse/bootstrap.min.css
+" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7362786342332071"
         crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header class="encabezado">
-        <nav>
-            <a href="https://ippublica.netlify.app/">
-                IP PUBLICA
-            </a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-page">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">MI IP PUBLICA</a>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#definicion-ip">¿Qué es una Ip?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ip-publica-def"> Ip Pública </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ip-privada-def"> Ip Privada </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#protocolos-tipos"> Protocolos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer"> About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <section>
             <div class="loader-page"></div>
             <div class="container">
-                <h1></h1>
+                <h1>Cargando...</h1>
             </div>
         </section>
         <section class="info-section">
 
-            <h2>Aprende sobre direcciones IP</h2>
+            <h1 id="definicion-ip">Aprende sobre direcciones IP</h1>
+            <br><br>
 
             <h3>¿Que es una direccion IP</h3>
 
@@ -38,10 +66,13 @@
                 conectado a Internet. Las direcciones IP permiten que los dispositivos se comuniquen entre sí a través
                 de Internet. Hay dos tipos de direcciones IP: <em>públicas</em> y <em> privadas</em>.</p>
 
-            <h3>IP publica</h3>
+            <br>
+            <h3 id="ip-publica-def">IP publica</h3>
 
-            <p>Una dirección IP pública es una dirección IP que es asignada por un proveedor de servicios de Internet
-                (ISP) a un dispositivo que está conectado directamente a Internet. Las direcciones IP públicas son
+            <p>Una dirección IP pública es una dirección IP que es asignada por un <strong>proveedor de servicios de
+                    Internet
+                    (ISP) </strong> a un dispositivo que está conectado directamente a Internet. Las direcciones IP
+                públicas son
                 únicas y se pueden utilizar para identificar un dispositivo específico en Internet. Se utilizan para
                 enrutar el tráfico entre dispositivos y redes en Internet.
 
@@ -50,9 +81,11 @@
                 Cuando te conectas a Internet a través de tu ISP, se asigna a tu dispositivo una dirección IP pública.
                 Esta dirección IP pública es utilizada por otros dispositivos en Internet para comunicarse con tu
                 dispositivo. Por ejemplo, cuando navegas por un sitio web, el servidor del sitio web envía datos a tu
-                dirección IP pública, que es la dirección a través de la cual se realiza la comunicación.</p>
+                dirección IP pública, que es la dirección a través de la cual se realiza la comunicación.
+            </p>
 
-            <h3>IP privada</h3>
+            <br>
+            <h3 id="ip-privada-def">IP privada</h3>
 
             <p>Una dirección IP privada es una dirección IP que se utiliza dentro de una red privada para identificar
                 dispositivos dentro de la red. Las direcciones IP privadas se utilizan en redes privadas como hogares,
@@ -65,36 +98,61 @@
                 dentro de una red privada y no se enrutan a través de Internet.
 
                 <br><br>
-                
+
                 Algunos ejemplos de direcciones IP privadas son:
 
-                <ul>
-                    <li>
-                        10.0.0.0 - 10.255.255.255
-                    </li>
-                    <li>
+            <ul>
+                <li>
+                    <strong>10.0.0.0 - 10.255.255.255
+                    </strong>
+                </li>
+                <li>
+                    <strong>
                         172.16.0.0 - 172.31.255.255
-                    </li>
-                    <li>
+                    </strong>
+                </li>
+                <li>
+                    <strong>
                         192.168.0.0 - 192.168.255.255
-                    </li>
-                </ul>
+                    </strong>
+                </li>
+            </ul>
 
-                <br><br>
+            <br>
 
-                Estas son las tres rangos de direcciones IP privadas que están definidos en el protocolo IPv4. En el
-                protocolo IPv6, todas las direcciones son asignadas de forma privada y únicas, por lo que no hay
-                direcciones IP privadas en IPv6.
+            Estas son las tres rangos de direcciones IP privadas que están definidos en el protocolo IPv4. En el
+            protocolo IPv6, todas las direcciones son asignadas de forma privada y únicas, por lo que no hay
+            direcciones IP privadas en IPv6.
 
-                <br><br>
+            <br><br>
 
-                Las direcciones IP privadas se utilizan para permitir que los dispositivos dentro de una red privada se
-                comuniquen entre sí, pero no se utilizan para acceder a Internet directamente. Para acceder a Internet,
-                los dispositivos en una red privada se conectan a través de un enrutador o un dispositivo de red que
-                tiene una dirección IP pública asignada por un ISP.
+            Las direcciones IP privadas se utilizan para permitir que los dispositivos dentro de una red privada se
+            comuniquen entre sí, pero no se utilizan para acceder a Internet directamente. Para acceder a Internet,
+            los dispositivos en una red privada se conectan a través de un enrutador o un dispositivo de red que
+            tiene una dirección IP pública asignada por un ISP.
             </p>
-    
-            <h3>Mas informacion sobre direcciones IP, redes y privacidad en linea.</h3>
+
+            <br>
+            <h3 id="protocolos-tipos">IPv4 - IPv6</h3>
+            <h2></h2>
+            <p>
+                Las direcciones IPv4 (Internet Protocol versión 4) y IPv6 (Internet Protocol
+                versión 6) son los dos tipos principales de protocolos utilizados en direcciones IP en la actualidad.
+                <br><br>
+                La mayoría de los dispositivos utilizan IPv4, que es un número de 32 bits representado por
+                cuatro octetos separados por puntos. <br> <br> Por ejemplo, una dirección IP típica de IPv4 sería
+                <strong>192.168.0.1</strong>.
+                <br><br>
+                Sin embargo, con el crecimiento de dispositivos conectados a internet, se ha producido una escasez de
+                direcciones IPv4 disponibles. Para solucionar esto, se desarrolló IPv6, que utiliza un número de 128
+                bits y tiene una cantidad de direcciones disponibles mucho mayor. Las direcciones IPv6 se representan
+                con ocho grupos de cuatro dígitos hexadecimales separados por dos puntos. <br> <br> Por ejemplo, una
+                dirección
+                IPv6 típica sería <strong> 2001:0db8:85a3:0000:0000:8a2e:0370:7334 </strong>.
+            </p>
+            <br>
+            <h3>Mas sobre direcciones IP, redes y privacidad en linea.</h3>
+            <br>
             <ul>
                 <li>
                     <a href="https://es.wikipedia.org/wiki/Direcci%C3%B3n_IP">Todo sobre direcciones ip</a>
@@ -103,16 +161,19 @@
                     <a href="https://nordvpn.com/es/what-is-my-ip/">Proteger mi privacidad en internet con nordvpn</a>
                 </li>
                 <li>
-                    <a href="https://www.avast.com/es-es/c-what-is-an-ip-address">¿Cuál es mi direccion IP? uso de vpn con Avast</a>
+                    <a href="https://www.avast.com/es-es/c-what-is-an-ip-address">¿Cuál es mi direccion IP? uso de vpn
+                        con Avast</a>
                 </li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <h5>
-            2023 Copyright ip publica website
-        </h5>
+    <footer id="footer">
+        <div class="container-footer">
+            <br>
+
+            <p>Copyright © 2023 Ip pública website. <br><br> All rights reserved.</p>
+        </div>
     </footer>
 
 

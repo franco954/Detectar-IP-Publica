@@ -3,12 +3,10 @@
 
 
 
-$(window).on('load', function () {
-    setTimeout(function () {
-  $(".loader-page").css({visibility:"hidden",opacity:"0"})
-}, 200);
-   
-});
+const copyIp = () => {
+    var textToCopy = document.getElementById("ip").innerText;
+    navigator.clipboard.writeText(textToCopy);
+}
 
 
 const obtenerIp = () => {
@@ -18,13 +16,16 @@ const obtenerIp = () => {
 };
 
 const pintarPantalla  = (data) =>{
-    document.querySelector('.container > h1').innerHTML = `<span id="ip">${data.ip}</span>`
+    document.querySelector('.container > h1').innerHTML = `<p id="legend-ip">Mi dirección IP publica es: </p><span id="ip">${data.ip}</span>
+    <button onclick="copyIp()" id="btn-copyIp" class="btn btn-secondary" title="copiar">
+        <i class="fa-regular fa-copy"></i>
+    </button>
+    `
 }
 
 obtenerIp()
 
 
-ScrollReveal().reveal('.container > h1', {delay: 500});
 
 
 
