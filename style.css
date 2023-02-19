@@ -104,3 +104,25 @@ footer{
     }
   }
 
+
+
+/* menu  toglle */
+
+nav .toggle {
+    display: none;
+  }
+  
+@media screen and (max-width: 768px) {
+    nav .toggle {
+      display: block;
+    }
+
+    nav .menu {
+        display: none;
+      }
+    
+      nav .menu.active {
+        display: block;
+      }
+
+  }
